@@ -1,0 +1,21 @@
+<h1>Info del bus</h1>
+<p>Matricula: {{bus.matricula}}</p>
+<p>Fabricacion: {{bus.afabricacion}}</p>
+<p>Visitas:</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Fecha</th>
+        <th>Autobus</th>
+        <th>Conductor</th>
+        <th>Lugar</th>
+    </tr>
+    <tr *ngFor="let visita of bus.visitasAutobus">
+        <td>{{visita.id}}</td>
+        <td>{{visita.fvisita}}</td>
+        <td>{{bus.matricula}}</td>
+        <td>{{visita.conductorVisita.dni}}</td>
+        <td>{{visita.lugarVisita.nombre}}</td>
+    </tr>
+    <tr></tr>
+</table>

@@ -1,0 +1,12 @@
+<h1>Principal</h1>
+<p>Escriba una de las siguientes matriculas de autobuses en la url</p>
+<table>
+    <tr>
+        <th>Matricula</th>
+        <th>Fecha</th>
+    </tr>
+    <tr *ngFor="let bus of autobuses">
+        <td>{{bus.matricula}}</td>
+        <td>{{bus.afabricacion}}</td>
+    </tr>
+</table>
